@@ -1,63 +1,105 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+body{
+    /* display: flex;
+    flex-flow: column; */
+    background-color: rgb(244, 248, 8);
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 600;
+    /* color: white; */
+}
+
+.parent{
+    display: flex;
+    flex-flow: column;
+    background: rgba(0, 255, 255, 0.90);
+    padding: 50px;
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+#search{
+    display: flex;
+    flex-flow: row;
+    transition: ease-in-out 300ms;
+}
+
+#search:hover{
+    transform: translate(-1px, -2px);
+}
+
+
+input{
+    background-color: rgba(252, 252, 252, 1);
+    padding-inline: 20px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    font-family:cursive;
+    font-weight: 600;
+    width: 70%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6), 3px 3px 5px rgb(255, 255, 255) inset;
+    transition: ease-in-out 100ms;
+}
+
+input:hover{
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 1);
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+
+button{
+  padding:15px;
+  background-color: rgb(224, 254, 3);
+  border: 3px solid black;
+  border-radius: 10px 10px 10px 10px;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  /* box-shadow: 2px 2px 5px rgba(170, 173, 252, 0.6) inset, 3px 3px 10px rgba(0,0,0,0.6); */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+  transition: ease-in-out 200ms;
+  user-select: none;
+  margin-left: 10px;
+}
+
+button:hover{
+    transform: translate(-1px, -2px);
+    cursor: pointer;
+}
+
+button:active{
+    transform: translate(1px, 2px);
+    box-shadow: 4px 4px 5px rgba(42, 42, 42, 0.6) inset ;
+    transition: ease-in-out 150ms;
+}
+
+.weather-card{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.weather-card > div{
+    margin-top: 20px;
+}
+
+#temp{
+    letter-spacing: 3px;
+}
+
+#iconimg{
+    position: inherit;
+    margin-right:10px;
+}

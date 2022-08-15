@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body><br>
+  <div class="parent">
+      <div id="search">
+      <input type="text" autocomplete="on" id="place" placeholder="Enter a city" />
+      <button onclick="getLocation()"><img height=40px width=40px src="https://cdn-icons-png.flaticon.com/512/61/61088.png"></button>
+      </div>
+      <div class="weather-card">
+        <div><img id="iconimg" height=55px width=55px src="https://cdn-icons-png.flaticon.com/512/4158/4158502.png"><span id="temp"></span></div>
+        <div><img id="iconimg" height=40px width=40px src="https://cdn-icons-png.flaticon.com/512/219/219816.png"><span id="humidity"></span></div>
+        <div id="weather"><img id="iconimg" height=45px width=45px src="https://cdn0.iconfinder.com/data/icons/sea-nautical-pirate-maritime/35/60-512.png"></div>
+        <br>
+        <div><img id="iconimg" height=50px width=50px src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_location_on_48px-512.png"><span id="city"></span></div>
+        <div id="date"></div>
+      </div>
+        
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
